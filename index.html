@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>د. هبة سليم | أخصائي نساء وتوليد وتنظيم أسرة</title>
+<meta name="description" content="د. هبة سليم أخصائي نساء وتوليد وتنظيم أسرة. احجزي موعدك في فروع كوم الضبع والباجور وكفر الباجور.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+:root{
+  --plum:#3b1636; --berry:#a8325e; --rose:#f7e1e4; --blush:#fdf3f3; --sage:#2f6f68; --sage-l:#dcebe8; --ink:#2a1a27; --muted:#6d5a68; --pearl:#fffdfb;
+  --display:'Reem Kufi','Tajawal',Tahoma,sans-serif; --body:'Tajawal',Tahoma,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);background:var(--pearl);color:var(--ink);line-height:1.8;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--berry);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);line-height:1.35;font-weight:700}
+h2{font-size:clamp(26px,4vw,38px);color:var(--plum);margin-bottom:10px}
+.lead{color:var(--muted);max-width:620px}
+section{padding:84px 0}
+
+/* nav */
+nav{position:sticky;top:0;z-index:40;background:rgba(255,253,251,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--rose)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand b{font-family:var(--display);font-size:21px;color:var(--plum);display:block;line-height:1.2}
+.brand small{color:var(--berry);font-size:13px}
+.mark{width:44px;height:44px;border-radius:50% 50% 50% 8px;background:var(--berry);display:grid;place-items:center;color:#fff}
+.links{display:flex;gap:22px;font-weight:500;font-size:15px;color:var(--plum)}
+.links a:hover{color:var(--berry)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--berry);color:#fff;border:0;border-radius:999px;padding:13px 28px;font:700 16px var(--body);cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:var(--plum);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--plum);border:2px solid var(--plum)}
+.btn.ghost:hover{background:var(--plum);color:#fff}
+@media(max-width:860px){.links{display:none}}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--blush) 55%,var(--rose));padding:56px 0 0;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(34px,5.6vw,62px);color:var(--plum);margin-bottom:18px}
+.hero h1 span{display:block;color:var(--berry);font-size:.62em;margin-top:6px}
+.hero p{color:var(--muted);font-size:18px;max-width:520px;margin-bottom:28px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:46px}
+.arch{position:relative;border-radius:999px 999px 0 0;overflow:hidden;background:linear-gradient(var(--rose),#e9bfc9);aspect-ratio:4/5;max-width:440px;margin-inline:auto;width:100%;box-shadow:0 0 0 10px rgba(255,255,255,.7),0 0 0 11px var(--berry)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:top}
+.pulse{position:absolute;inset-inline:0;bottom:0;height:90px;pointer-events:none}
+.pulse path{fill:none;stroke:var(--berry);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 3.2s ease-out .4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.tags{display:flex;gap:10px;flex-wrap:wrap;padding-bottom:40px}
+.tags span{background:#fff;border:1px solid var(--rose);border-radius:999px;padding:6px 16px;font-size:14px;color:var(--plum)}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.arch{max-width:340px;order:-1}.hero{padding-top:32px}}
+
+/* booking */
+.book{background:var(--plum);color:#fff}
+.book h2{color:#fff}.book .lead{color:#e9cfe0}
+.panel{margin-top:36px;background:var(--pearl);color:var(--ink);border-radius:28px;display:grid;grid-template-columns:340px 1fr;overflow:hidden}
+.side{background:var(--sage-l);padding:26px}
+.step{font-family:var(--display);font-size:19px;color:var(--sage);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.clinic{display:block;width:100%;text-align:right;background:#fff;border:2px solid transparent;border-radius:16px;padding:14px 16px;margin-bottom:12px;cursor:pointer;font:inherit;color:inherit;transition:border-color .2s}
+.clinic:hover{border-color:#9cc7c0}
+.clinic[aria-pressed=true]{border-color:var(--sage);box-shadow:0 6px 18px rgba(47,111,104,.18)}
+.clinic b{font-family:var(--display);color:var(--sage);font-size:18px}
+.clinic em{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:4px}
+.main{padding:26px 30px;min-height:420px}
+.empty{height:100%;min-height:300px;display:grid;place-content:center;text-align:center;color:var(--muted)}
+.days,.slots{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.chip{border:2px solid var(--rose);background:#fff;border-radius:14px;padding:9px 16px;font:500 15px var(--body);cursor:pointer;color:var(--plum);transition:.15s}
+.chip:hover{border-color:var(--berry)}
+.chip[aria-pressed=true]{background:var(--berry);border-color:var(--berry);color:#fff}
+.chip small{display:block;font-size:12px;opacity:.8}
+.slots .chip{min-width:104px;text-align:center}
+.form{background:var(--blush);border-radius:18px;padding:20px;display:grid;gap:12px;animation:rise .35s ease}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.form label{font-weight:700;font-size:15px;color:var(--plum)}
+.form input{width:100%;padding:12px 14px;border:2px solid var(--rose);border-radius:12px;font:inherit;background:#fff;margin-top:4px}
+.form input:focus{outline:none;border-color:var(--berry)}
+.sum{color:var(--sage);font-weight:700}
+.note{font-size:13.5px;color:var(--muted);margin-top:10px}
+.err{color:#b3261e;font-size:14px;min-height:20px}
+.ok{background:var(--sage-l);border-radius:18px;padding:22px;text-align:center;animation:rise .35s ease}
+.ok b{font-family:var(--display);font-size:22px;color:var(--sage);display:block;margin-bottom:6px}
+@media(max-width:860px){.panel{grid-template-columns:1fr}.main{padding:22px 18px}}
+
+/* guide */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.card{padding:28px;border-radius:26px 26px 26px 6px;background:var(--blush);border:1px solid var(--rose)}
+.card:nth-child(even){background:var(--sage-l);border-color:#c3ddd8;border-radius:26px 26px 6px 26px}
+.card i{width:50px;height:50px;border-radius:50%;background:#fff;display:grid;place-items:center;font-style:normal;font-size:24px;margin-bottom:14px}
+.card h3{font-size:20px;color:var(--plum);margin-bottom:6px}
+.card p{font-size:15.5px;color:var(--muted)}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.grid{grid-template-columns:1fr}}
+
+/* testimonials */
+.voices{background:var(--rose)}
+.quotes{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:22px;margin-top:40px;align-items:start}
+.q{background:#fff;border-radius:24px;padding:28px;position:relative}
+.q:first-child{background:var(--plum);color:#fff}
+.q:first-child .who{color:#f3bccf}
+.q::before{content:"”";font-family:var(--display);font-size:80px;line-height:.6;color:var(--berry);opacity:.35;position:absolute;top:30px;left:22px}
+.stars{color:#e0a526;letter-spacing:3px;margin-bottom:10px}
+.q p{font-size:16px;margin-bottom:14px}
+.who{font-weight:700;color:var(--berry)}
+@media(max-width:900px){.quotes{grid-template-columns:1fr}}
+
+/* gallery */
+.gal{columns:3 240px;column-gap:14px;margin-top:36px}
+.gal button{display:block;width:100%;border:0;padding:0;margin-bottom:14px;border-radius:20px;overflow:hidden;cursor:zoom-in;background:var(--rose);break-inside:avoid}
+.gal img{width:100%;height:auto;transition:transform .5s}
+.gal button:hover img{transform:scale(1.04)}
+.lb{position:fixed;inset:0;background:rgba(40,12,35,.92);display:none;place-items:center;z-index:100;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-height:90vh;border-radius:16px}
+
+/* family */
+.family{background:var(--sage);color:#fff}
+.family .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:center}
+.family h2{color:#fff}
+.family .big{font-family:var(--display);font-size:clamp(26px,3.6vw,40px);line-height:1.6;color:#fcdbe5}
+.family ul{list-style:none;display:grid;gap:14px}
+.family li{background:rgba(255,255,255,.1);border-radius:18px;padding:16px 20px;border-inline-start:5px solid #f3bccf}
+@media(max-width:860px){.family .wrap{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:#24101f;color:#d9c3d2;padding:56px 0 24px}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px}
+footer h3{color:#fff;font-size:19px;margin-bottom:12px}
+footer li{list-style:none;margin-bottom:8px;font-size:15px}
+footer a:hover{color:#fff}
+.copy{text-align:center;font-size:13.5px;margin-top:36px;padding-top:20px;border-top:1px solid #4a2a42}
+@media(max-width:760px){footer .wrap{grid-template-columns:1fr}}
+
+/* cover */
+.cover{position:absolute;inset:0;background:url(https://i.ibb.co/WryxnJ9/Gemini-Generated-Image-qi130bqi130bqi13.jpg) center/cover no-repeat;opacity:.22;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.cover-only{background:#f7c9d6;line-height:0}.cover-only img{width:100%;height:auto;display:block}
+/* about */
+.about{background:#fff}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.degree{display:inline-block;background:var(--plum);color:#fff;border-radius:999px;padding:6px 20px;font-family:var(--display);margin-bottom:14px}
+.facts{list-style:none;display:grid;gap:12px}
+.facts li{background:var(--blush);border-inline-start:5px solid var(--berry);border-radius:14px;padding:14px 18px}
+.facts b{color:var(--plum);font-family:var(--display)}
+@media(max-width:860px){.about .wrap{grid-template-columns:1fr}}
+/* trimesters */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-radius:26px;overflow:hidden;border:1px solid var(--rose)}
+.tri div{padding:26px;background:var(--blush)}
+.tri div:nth-child(2){background:var(--rose)}
+.tri div:nth-child(3){background:#f3c9d3}
+.tri h3{font-size:20px;color:var(--plum)}.tri small{color:var(--berry);font-weight:700}
+.tri ul{margin:10px 18px 0;font-size:15px;color:var(--ink)}
+.disc{font-size:13.5px;color:var(--muted);margin-top:12px}
+@media(max-width:760px){.tri{grid-template-columns:1fr}}
+/* couple */
+.couple{width:min(460px,100%);height:auto;margin:26px 0 0;border-radius:28px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+/* maps */
+.maps{background:var(--blush)}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.map{background:#fff;border-radius:24px;overflow:hidden;border:1px solid var(--rose)}
+.map iframe{width:100%;height:240px;border:0;display:block;background:var(--sage-l)}
+.map div{padding:16px 20px}
+.map b{font-family:var(--display);color:var(--plum);font-size:18px;display:block}
+.map a{color:var(--berry);font-weight:700;font-size:14.5px}
+@media(max-width:900px){.mgrid{grid-template-columns:1fr}}
+/* floating call */
+.fab{position:fixed;bottom:18px;inset-inline-start:18px;z-index:50;display:flex;flex-direction:column;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.25);font-size:24px}
+.fab .wa{background:#25a244}.fab .ph{background:var(--berry)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.pulse path{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="mark" aria-hidden="true">♥</span><span><b>د. هبة سليم</b><small>أخصائي نساء وتوليد وتنظيم أسرة</small></span></a>
+    <div class="links"><a href="#about">عن الدكتورة</a><a href="#booking">الحجز</a><a href="#guide">الدليل الطبي</a><a href="#voices">آراء الأمهات</a><a href="#gallery">لحظات السعادة</a><a href="#family">دور الأسرة</a><a href="#clinics-map">العيادات</a></div>
+    <a href="#booking" class="btn" style="padding:10px 22px;font-size:15px">احجزي الآن</a>
+  </div>
+</nav>
+
+<header class="cover-only" id="top"><img src="https://i.ibb.co/WryxnJ9/Gemini-Generated-Image-qi130bqi130bqi13.jpg" alt="د. هبة سليم - أخصائي نساء وتوليد وتنظيم أسرة"></header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="degree">ماجستير نساء وتوليد - جامعة المنوفية</span>
+      <h2>د. هبة سليم</h2>
+      <p class="lead">أخصائي نساء وتوليد وتنظيم أسرة. بتتابع الحمل خطوة بخطوة، وبتشرح لكل حالة الخيارات بصراحة، حتى لو كان الاقتراح هو الولادة الطبيعية بدل القيصرية.</p>
+    </div>
+    <ul class="facts">
+      <li><b>متابعة الحمل والولادة</b><br>من أول زيارة وحتى بعد الولادة.</li>
+      <li><b>تنظيم الأسرة</b><br>استشارة واختيار الوسيلة المناسبة لكِ.</li>
+      <li><b>الكشف المبكر</b><br>فحص دوري لعنق الرحم والثدي.</li>
+      <li><b>ثلاثة فروع</b><br>كوم الضبع، الباجور، كفر الباجور.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="book" id="booking">
+  <div class="wrap">
+    <h2>احجزي موعدك في ٣ خطوات</h2>
+    <p class="lead">اختاري الفرع، ثم اليوم، ثم الميعاد. الكشف كل ١٥ دقيقة عشان ما تستنّيش كتير.</p>
+    <div class="panel">
+      <div class="side">
+        <div class="step">١. اختاري الفرع</div>
+        <div id="clinics"></div>
+      </div>
+      <div class="main" id="main"><div class="empty"><div style="font-size:48px">📅</div><p>اختاري الفرع الأول وهتظهر لك المواعيد المتاحة</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <h2>دليلك الطبي</h2>
+    <p class="lead">معلومات مبسطة تساعدك في رحلة الحمل والأمومة. وعيك أول خطوة لسلامتك.</p>
+    <div class="grid" id="cards"></div>
+    <div class="tri">
+      <div><small>الأسابيع ١ - ١٢</small><h3>الثلث الأول</h3><ul><li>تكوّن أعضاء الجنين الأساسية</li><li>غثيان وإرهاق شائعان</li><li>حمض الفوليك وأول سونار</li></ul></div>
+      <div><small>الأسابيع ١٣ - ٢٦</small><h3>الثلث الثاني</h3><ul><li>غالبًا أهدأ فترة في الحمل</li><li>بداية الإحساس بحركة الجنين</li><li>سونار التفاصيل وتحليل السكر</li></ul></div>
+      <div><small>الأسابيع ٢٧ - الولادة</small><h3>الثلث الثالث والأخير</h3><ul><li>متابعة الضغط وحركة الجنين</li><li>التجهيز للولادة وعلامات الطلق</li><li>زيارات أقرب مع الدكتورة</li></ul></div>
+    </div>
+    <p class="disc">معلومات عامة للتوعية، ولا تغني عن الكشف. تابعي حالتك مع الدكتورة.</p>
+  </div>
+</section>
+
+<section class="voices" id="voices">
+  <div class="wrap">
+    <h2>قالوا عن د. هبة</h2>
+    <p class="lead">كلمات من أمهات عشن التجربة بنفسهن.</p>
+    <div class="quotes" id="quotes"></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>لحظات من السعادة</h2>
+    <p class="lead">الفرحة بتكمل برؤية المولود بأمان وسلام.</p>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-label="عرض الصورة"><img id="lbimg" alt=""></div>
+
+<section class="family" id="family">
+  <div class="wrap">
+    <div>
+      <h2>الزوج هو السند الأول</h2>
+      <p class="big">الحمل رحلة اتنين، مش مسؤولية الأم وحدها.</p>
+      <img class="couple" src="https://i.ibb.co/cSJ30JXS/2d2b737f-3acb-4696-9271-28354b910d7a.jpg" alt="الزوج يقدم كوب شاي لزوجته الحامل" loading="lazy">
+    </div>
+    <ul>
+      <li>رافقيها في زيارات الطبيب. وجودك جنبها بيطمّنها وبيخليها تحس إنك شريك في الرحلة.</li>
+      <li>الكلمة الطيبة أحسن مسكّن لمتاعب الحمل. ذكّرها دايمًا بقوتها.</li>
+      <li>فترة النفاس أكتر فترة حساسة. كن صبورًا وشارك فعليًا في رعاية المولود.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="maps" id="clinics-map">
+  <div class="wrap">
+    <h2>أماكن العيادات</h2>
+    <p class="lead">اضغطي على "افتح في الخريطة" لتحديد الطريق من مكانك.</p>
+    <div class="mgrid" id="mgrid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>د. هبة سليم</h3>
+      <p style="font-size:15px;margin-bottom:14px">أخصائي نساء وتوليد وتنظيم أسرة. رعاية طبية متكاملة تضمن صحتك وصحة مولودك.</p>
+      <a href="https://www.facebook.com/drh.selim" target="_blank" rel="noopener" class="btn ghost" style="color:#fff;border-color:#fff;padding:8px 20px;font-size:14px">صفحتنا على فيسبوك</a>
+    </div>
+    <div>
+      <h3>تواصل معنا</h3>
+      <ul><li><a href="tel:01055946161">للحجز والاستفسار: 01055946161</a></li><li>الباجور - كفر الباجور - كوم الضبع</li></ul>
+    </div>
+    <div>
+      <h3>روابط سريعة</h3>
+      <ul><li><a href="#booking">احجزي موعدك</a></li><li><a href="#guide">الدليل الطبي</a></li><li><a href="#voices">آراء الأمهات</a></li><li><a href="#gallery">معرض الصور</a></li></ul>
+    </div>
+  </div>
+  <p class="copy">© <span id="yr"></span> د. هبة سليم. جميع الحقوق محفوظة.</p>
+</footer>
+
+<div class="fab">
+  <a class="wa" href="https://wa.me/201055946161" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+  <a class="ph" href="tel:01055946161" aria-label="اتصال">📞</a>
+</div>
+
+<script>
+const PHONE='201055946161';
+const CLINICS=[
+ {id:'c1',name:'فرع كوم الضبع',sch:[{d:[0,4],s:20,e:23,l:'الأحد والخميس: ٨ م إلى ١١ م'}]},
+ {id:'c2',name:'فرع الباجور',sch:[{d:[6,1,3],s:18,e:22,l:'السبت والإثنين والأربعاء: ٦ م إلى ١٠ م'},{d:[5],s:14,e:18,l:'الجمعة: ٢ م إلى ٦ م'}]},
+ {id:'c3',name:'فرع كفر الباجور',sch:[{d:[2],s:19,e:22,l:'الثلاثاء: ٧ م إلى ١٠ م'}]}
+];
+const CARDS=[
+ ['🤰','مراحل الحمل: الثلث الأول والثاني والثالث','تعرفي على التغيرات الجسدية والنفسية في كل ثلث من الحمل، وكيفية التعامل مع الأعراض المختلفة لضمان حمل صحي وآمن.'],
+ ['🩺','ضبط السكر والضغط','إرشادات هامة للحفاظ على مستويات سكر الدم وضغط الدم في المعدلات الطبيعية لتجنب سكري الحمل وتسمم الحمل.'],
+ ['🧪','التحاليل الدورية','قائمة بأهم التحاليل والفحوصات التي يجب إجراؤها في كل مرحلة من الحمل للاطمئنان على صحتك وصحة جنينك.'],
+ ['👶','الولادة الطبيعية والقيصرية','مقارنة طبية بين الولادة الطبيعية والقيصرية، ومتى نلجأ لكل منهما، وكيفية الاستعداد النفسي والجسدي.'],
+ ['🤱','الرضاعة الطبيعية والمناعة','لماذا الرضاعة الطبيعية هي الأفضل؟ فوائد حليب الأم في تعزيز مناعة طفلك وطرق تحفيز إدرار اللبن.'],
+ ['🛡️','الكشف المبكر والأورام','أهمية الفحص الدوري للكشف المبكر عن أورام الثدي وعنق الرحم، فالكشف المبكر هو خط الدفاع الأول لحمايتك.']
+];
+const QUOTES=[
+ ['أم سعيدة','والله يا دكتورة من غير أي ريفيوهات أصلًا، الولادة مع حضرتك الله مبارك. قلتيلي بدون ألم وهي فعلًا بدون ألم. يكفي إنك لآخر لحظة كنتي بتحاولي تقنعيني أولد طبيعي، مع إن أي حد تاني كان هيقول ماله. إنتي أمينة وعندك ضمير مع الحالات، والتعامل معاكي سهل.'],
+ ['مها م.','أفضل دكتورة نسا وتوليد. متابعة دقيقة ومريحة نفسيًا جدًا. طول فترة الحمل كنت حاسة بأمان بفضل توجيهاتك المستمرة.'],
+ ['سارة ع.','رحلة حملي كانت أسهل بفضل اهتمامك بكل التفاصيل الصغيرة قبل الكبيرة. شكرًا على كل حاجة.']
+];
+const IMGS=["https://i.ibb.co/zHJtkzkc/595342177-829433773397123-837659910523288701-n.jpg","https://i.ibb.co/0jrM8XPL/598955777-836388646034969-5992079208184267156-n.jpg","https://i.ibb.co/PsQ6Yp9v/604616482-843780991962401-8924431134121859744-n.jpg","https://i.ibb.co/b54zj6T3/615444410-861109550229545-8906186390344836724-n.jpg","https://i.ibb.co/9knXmqgq/657367139-914982988175534-1731890178761113124-n.jpg","https://i.ibb.co/ZpWKwHpz/659780590-920247067649126-411960033154139913-n.jpg","https://i.ibb.co/Y7GqLCvB/665914799-924294990577667-1872859111897358479-n.jpg","https://i.ibb.co/qM3dDBhS/665861526-925019430505223-6540062278676990631-n.jpg","https://i.ibb.co/xKZTYjk8/674069481-935302139476952-7702108617082660936-n.jpg","https://i.ibb.co/xqXGBWWY/681008818-941138998893266-5761655943759738904-n.jpg","https://i.ibb.co/93h3zVG0/685116474-945075785166254-496873033989406346-n.jpg","https://i.ibb.co/0y3GVjnN/697123453-955108420829657-4387953374408918111-n.jpg","https://i.ibb.co/3yb1Grsr/699171515-958275163846316-1877621561532874489-n.jpg","https://i.ibb.co/ksf22Jzr/701466301-960859393587893-730312983528557139-n.jpg","https://i.ibb.co/ZRqb59WS/701942379-960859390254560-8809210758595110120-n.jpg","https://i.ibb.co/NgZw0Jhk/703104679-961697013504131-6172624844875041481-n.jpg","https://i.ibb.co/0jYqgF0H/711679843-974147782259054-9152195673656853133-n.jpg","https://i.ibb.co/1x0nQJK/711618807-974259302247902-7087861062449930490-n.jpg","https://i.ibb.co/HfH3HnvF/712544192-974259295581236-5779489526990128281-n.jpg","https://i.ibb.co/jZ8FHfxH/714410086-974739222199910-5839922495746667626-n.jpg","https://i.ibb.co/8nx72Nq9/712466287-974948555512310-8112444804915215956-n.jpg","https://i.ibb.co/cXYTXhh3/717017184-976633905343775-2478652670915040490-n.jpg","https://i.ibb.co/qYsHh68P/741416319-1005550645785434-5905503611793675919-n.jpg","https://i.ibb.co/8L5QbX0Q/802459105-1059240120416486-8290851650522835071-n-1.jpg"];
+
+const $=id=>document.getElementById(id);
+const nf=n=>n.toLocaleString('ar-EG');
+let booked=[];try{booked=JSON.parse(localStorage.getItem('hs_booked')||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem('hs_booked',JSON.stringify(booked))}catch(e){}};
+let st={clinic:null,day:null,slot:null,done:null};
+
+// static content
+$('yr').textContent=new Date().getFullYear();
+$('cards').innerHTML=CARDS.map(c=>`<div class="card"><i>${c[0]}</i><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join('');
+$('quotes').innerHTML=QUOTES.map(q=>`<div class="q"><div class="stars">★★★★★</div><p>${q[1]}</p><div class="who">${q[0]}</div></div>`).join('');
+$('gal').innerHTML=IMGS.map((s,i)=>`<button aria-label="تكبير الصورة ${nf(i+1)}"><img src="${s}" alt="لحظة سعادة ${nf(i+1)}" loading="lazy" onerror="this.parentNode.remove()"></button>`).join('');
+$('gal').addEventListener('click',e=>{const im=e.target.closest('button')?.querySelector('img');if(im){$('lbimg').src=im.src;$('lb').classList.add('on')}});
+$('lb').onclick=()=>$('lb').classList.remove('on');
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('lb').classList.remove('on')});
+
+// booking
+const key=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+function days(c){const out=[],now=new Date();
+  for(let i=0;i<14;i++){const d=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i);
+    const s=c.sch.find(x=>x.d.includes(d.getDay()));
+    if(!s)continue;
+    if(i===0&&now.getHours()>=s.e)continue;
+    out.push({id:key(d),date:d,s});}
+  return out}
+function slots(day){const r=[],now=new Date(),today=key(now)===day.id;
+  for(let h=day.s.s;h<day.s.e;h++)for(const m of [0,15,30,45]){
+    if(today&&(h<now.getHours()||(h===now.getHours()&&m<=now.getMinutes())))continue;
+    const hh=h>12?h-12:h,mm=m?nf(m):'٠٠';
+    r.push({id:`${h}:${m}`,label:`${nf(hh)}:${mm} ${h>=12?'م':'ص'}`})}
+  return r}
+const bid=()=>`${st.clinic.id}|${st.day.id}|${st.slot.id}`;
+
+function drawClinics(){
+  $('clinics').innerHTML=CLINICS.map(c=>`<button class="clinic" data-id="${c.id}" aria-pressed="${st.clinic?.id===c.id}"><b>${c.name}</b>${c.sch.map(s=>`<em>${s.l}</em>`).join('')}</button>`).join('')}
+$('clinics').addEventListener('click',e=>{const b=e.target.closest('.clinic');if(!b)return;
+  st={clinic:CLINICS.find(c=>c.id===b.dataset.id),day:null,slot:null,done:null};drawClinics();drawMain()});
+
+function drawMain(){
+  const m=$('main');
+  if(!st.clinic)return;
+  if(st.done){m.innerHTML=`<div class="ok"><b>تم تجهيز حجزك ✔</b><p>${st.done}</p><p class="note">لو واتساب ما فتحش تلقائيًا، ابعتي لنا رسالة على 01055946161 بنفس البيانات.</p><button class="btn" style="margin-top:14px" id="again">حجز موعد آخر</button></div>`;
+    $('again').onclick=()=>{st.day=st.slot=st.done=null;drawMain()};return}
+  const ds=days(st.clinic);
+  let h=`<div class="step">٢. اختاري اليوم</div><div class="days">`+ds.map(d=>`<button class="chip" data-day="${d.id}" aria-pressed="${st.day?.id===d.id}">${d.date.toLocaleDateString('ar-EG',{weekday:'long'})}<small>${d.date.toLocaleDateString('ar-EG',{day:'numeric',month:'long'})}</small></button>`).join('')+`</div>`;
+  if(st.day){
+    const free=slots(st.day).filter(s=>!booked.includes(`${st.clinic.id}|${st.day.id}|${s.id}`));
+    h+=`<div class="step">٣. اختاري الميعاد</div>`;
+    h+=free.length?`<div class="slots">`+free.map(s=>`<button class="chip" data-slot="${s.id}" data-label="${s.label}" aria-pressed="${st.slot?.id===s.id}">${s.label}</button>`).join('')+`</div>`:`<p class="note" style="margin-bottom:20px">اكتملت الحجوزات لهذا اليوم. اختاري يومًا آخر.</p>`;
+  }
+  if(st.slot){
+    h+=`<form class="form" id="f"><p class="sum">${st.clinic.name} - ${st.day.date.toLocaleDateString('ar-EG',{weekday:'long',day:'numeric',month:'long'})} - ${st.slot.label}</p>
+    <div><label for="nm">الاسم</label><input id="nm" autocomplete="name" required></div>
+    <div><label for="ph">رقم الموبايل</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" required></div>
+    <div class="err" id="er" role="alert"></div>
+    <button class="btn" type="submit">تأكيد الحجز عبر واتساب</button>
+    <p class="note">هنفتح لك واتساب برسالة جاهزة لعيادة د. هبة لتأكيد الميعاد.</p></form>`}
+  m.innerHTML=h;
+  if(st.slot)$('f').onsubmit=submit}
+$('main').addEventListener('click',e=>{
+  const d=e.target.closest('[data-day]'),s=e.target.closest('[data-slot]');
+  if(d){st.day=days(st.clinic).find(x=>x.id===d.dataset.day);st.slot=null;drawMain()}
+  if(s){st.slot={id:s.dataset.slot,label:s.dataset.label};drawMain();$('f')?.scrollIntoView({behavior:'smooth',block:'center'})}});
+
+function submit(e){e.preventDefault();
+  const n=$('nm').value.trim(),p=$('ph').value.replace(/\s/g,'');
+  if(n.length<3){$('er').textContent='اكتبي اسمك بالكامل.';return}
+  if(!/^(\+?20|0)?1[0125]\d{8}$/.test(p)){$('er').textContent='رقم الموبايل غير صحيح. اكتبيه بالشكل 01xxxxxxxxx.';return}
+  const date=st.day.date.toLocaleDateString('ar-EG',{weekday:'long',day:'numeric',month:'long'});
+  const msg=`حجز جديد%0Aالاسم: ${encodeURIComponent(n)}%0Aالموبايل: ${encodeURIComponent(p)}%0Aالفرع: ${encodeURIComponent(st.clinic.name)}%0Aاليوم: ${encodeURIComponent(date)}%0Aالميعاد: ${encodeURIComponent(st.slot.label)}`;
+  booked.push(bid());save();
+  st.done=`${st.clinic.name}، ${date}، ${st.slot.label}`;
+  window.open(`https://wa.me/${PHONE}?text=${msg}`,'_blank');
+  drawMain()}
+drawClinics();
+// maps
+const MAPS=[['فرع كوم الضبع','كوم الضبع، المنوفية، مصر'],['فرع الباجور','الباجور، المنوفية، مصر'],['فرع كفر الباجور','كفر الباجور، المنوفية، مصر']];
+$('mgrid').innerHTML=MAPS.map(m=>{const q=encodeURIComponent(m[1]);return `<div class="map"><iframe loading="lazy" title="خريطة ${m[0]}" src="https://www.google.com/maps?q=${q}&output=embed&hl=ar"></iframe><div><b>${m[0]}</b><a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">افتح في الخريطة</a></div></div>`}).join('');
+</script>
+</body>
+</html>
